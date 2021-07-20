@@ -1,0 +1,45 @@
+{
+  "name": "brf-marketing-design-template",
+  "version": "1.0.0",
+  "description": "Marketing Design Template",
+  "author": "Brian Francisco",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.+(js|css|vue)\"",
+    "watch": "onchange '**/*.js' '**/*.vue' '**/*.css' -- prettier --write {{changed}}"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@tryghost/content-api": "^1.5.2",
+    "dotenv": "^8.2.0",
+    "hooper": "^0.3.4",
+    "jshint": "^2.12.0",
+    "moment": "^2.29.1",
+    "nuxt": "^2.15.4",
+    "nuxt-fontawesome": "^0.4.0",
+    "postcss": "^8.2.10"
+  },
+  "devDependencies": {
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "@nuxtjs/tailwindcss": "^4.0.3",
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.9.0",
+    "onchange": "^7.1.0",
+    "postcss-import": "^14.0.1",
+    "postcss-nested": "^5.0.5",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.1.1"
+  }
+}

@@ -1,0 +1,166 @@
+html {
+  @apply font-sans font-medium leading-loose text-textColor;
+}
+
+/* circle */
+.brf-circle {
+  @apply w-1 h-1 p-5 text-center rounded-full inline-flex items-center justify-center;
+}
+@screen lg {
+  .brf-circle {
+    @apply p-6;
+  }
+}
+.brf-circle-sm {
+  @apply p-5;
+}
+.brf-circle-lg {
+  @apply p-8;
+}
+.brf-circle-xl {
+  @apply p-16;
+}
+.brf-circle-blue {
+  @apply bg-blue-400 text-white;
+  background-image: linear-gradient(
+    215deg,
+    hsl(205deg 59% 49%),
+    hsl(240deg 37% 60%)
+  );
+}
+.brf-circle-red {
+  @apply bg-red-400 text-white;
+  background-image: linear-gradient(
+    215deg,
+    hsl(14deg 100% 72%),
+    hsl(340deg 83% 69%)
+  );
+}
+.brf-circle-teal {
+  @apply bg-teal-600 text-white;
+  background-image: linear-gradient(
+    215deg,
+    hsl(180deg, 67%, 46%),
+    hsl(195deg, 81%, 46%)
+  );
+}
+.brf-circle-green {
+  @apply text-white;
+  background: #2eb775;
+}
+.brf-circle-indigo {
+  @apply bg-indigo-400 text-white;
+}
+.brf-circle-orange {
+  @apply bg-orange-400 text-white;
+  background-image: linear-gradient(
+    215deg,
+    hsl(35deg 83% 61%),
+    hsl(13deg 89% 61%)
+  );
+}
+.brf-circle-yellow {
+  @apply bg-yellow-base text-titleColor;
+}
+/* utility  */
+.flex-basis {
+  flex-basis: auto;
+}
+.rotate-270 {
+  --transform-rotate: 270deg;
+}
+
+/* base */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-normal;
+}
+
+.header-intro-title,
+.header-intro-title-lg {
+  @apply text-4xl text-gray-1000 leading-tight font-bold;
+}
+.header-body {
+  @apply text-lg;
+}
+
+@screen md {
+  .header-intro-title,
+  .header-intro-title-lg {
+    @apply text-5xl;
+  }
+}
+@screen lg {
+  .header-body {
+    @apply text-xl;
+  }
+  .brf-circle-xl {
+    @apply p-20;
+  }
+}
+@screen xl {
+  .header-intro-title {
+    @apply text-6xl;
+  }
+  .header-intro-title-lg {
+    @apply text-7xl;
+  }
+}
+
+.section-title {
+  @apply text-3xl text-titleColor font-bold leading-dense;
+}
+@screen md {
+  .section-title {
+    @apply text-4xl;
+  }
+}
+@screen xl {
+  .section-title {
+    @apply text-6xl;
+  }
+}
+.section-title-copy {
+  @apply text-2xl text-titleColor font-bold leading-tight;
+}
+@screen md {
+  .section-title-copy {
+    @apply text-3xl;
+  }
+  .section-body-copy {
+    @apply text-lg;
+  }
+}
+@screen xl {
+  .section-title-copy {
+    @apply text-4xl;
+  }
+}
+
+.theme-dark .header-intro-title,
+.theme-dark .header-intro-title-lg,
+.theme-dark .section-title,
+.theme-dark .section-title-copy {
+  @apply text-white;
+}
+
+p {
+  @apply mb-4;
+}
+
+p:last-child {
+  @apply mb-0;
+}
+
+strong {
+  @apply text-titleColor;
+}
+
+.hooper-navigation svg {
+  width: 50px;
+  height: 50px;
+}
