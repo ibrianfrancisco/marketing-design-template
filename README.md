@@ -1,10 +1,11 @@
 # Marketing Design Template
 
-Site built using:
-Vue.js
-Nuxt.js
-Tailwind CSS
-Ghost headless CMS
+## Site built using:
+
+* Vue.js
+* Nuxt.js
+* Tailwind CSS
+* Ghost headless CMS
 
 ## Build Setup
 
