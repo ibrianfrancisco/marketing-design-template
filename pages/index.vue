@@ -433,7 +433,6 @@
   </main>
 </template>
 <script>
-import { getPosts } from '~/api/posts';
 import BCard from '~/components/ui/BaseCard';
 import CallToAction from '~/components/layout/CallToAction';
 import Connection from '~/assets/images/svg/undrawConnection';
@@ -458,31 +457,8 @@ export default {
     Rain,
     Help,
   },
-  async asyncData() {
-    const posts = await getPosts(1);
-
-    posts.map(post => {
-      const options = {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      };
-      post.dateFormatted = new Intl.DateTimeFormat('en-US', options).format(
-        new Date(post.published_at)
-      );
-    });
-
-    const featurePost = posts.shift();
-
-    return {
-      posts: posts,
-      featurePost: featurePost,
-    };
-  },
   data() {
     return {
-      posts: [],
-      featurePost: {},
       typedWords: [
         {
           id: 1,

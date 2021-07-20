@@ -18,9 +18,7 @@
       <div class="lg:flex lg:justify-between lg:items-center">
         <div class="flex items-center justify-between py-2 mx-4 lg:mx-0">
           <div class="logo">
-            <n-link @click.native="toggleIsOpen" prefetch to="/">
-              <app-logo />
-            </n-link>
+            <app-logo />
           </div>
           <!-- Close Icon -->
           <div class="lg:hidden">

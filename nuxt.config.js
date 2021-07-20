@@ -2,6 +2,7 @@ const env = require('dotenv').config();
 
 export default {
   env: env.parsed,
+  target: 'static',
   /*
    ** Headers of the page
    */
@@ -46,7 +47,7 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
   tailwindcss: {
-    purgeCSSInDev: false,
+    purgeCSSInDev: true,
   },
   /*
    ** Nuxt.js modules
@@ -72,7 +73,7 @@ export default {
     linkActiveClass: 'active-link',
   },
   purgeCSS: {
-    enabled: false,
+    enabled: true,
   },
   /*
    ** Build configuration

@@ -4,9 +4,9 @@
     <b-section class="brf-section-charcoal brf-section-intro-lg">
       <b-container class="brf-container-sm">
         <b-row class="mb-12">
-          <b-col class="w-full text-center">
-            <h2 class="section-title mb-4">Blog</h2>
-            <p class="header-body mb-20">
+          <b-col class="w-full">
+            <h2 class="section-title text-center mb-4">Blog</h2>
+            <p class="header-body text-center mb-20">
               Lorem, ipsum dolor sit amet consectetur, adipisicing.
             </p>
             <base-nav v-slot="{ isOpen }">

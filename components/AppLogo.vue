@@ -1,5 +1,7 @@
 <template>
-  <h1 class="logo">BRF.</h1>
+  <h1 class="logo">
+    <n-link @click.native="toggleIsOpen" prefetch to="/">BRF.</n-link>
+  </h1>
 </template>
 
 <script>
